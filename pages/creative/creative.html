@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Zone</title>
+    <link rel="stylesheet" href="creative.css">
+</head>
+<body>
+
+    <header>
+        <h1>Baby feeling creative? 🎶</h1>
+        <p>Tell me I did a good job! Mm</p>
+    </header>
+
+    <!-- Inspiration from Nepali Poets & Songwriters -->
+    <section id="inspiration">
+        <h2>📜 Daily Inspiration from Nepali Poets & Songwriters</h2>
+        <p id="quote">Loading...</p>
+    </section>
+
+    <!-- Random Song Prompt -->
+    <section id="song-prompt">
+        <h2>🎼 Need a Song Idea?</h2>
+        <button onclick="generateSongPrompt()">Get Random Prompt</button>
+        <p id="prompt-result"></p>
+    </section>
+
+    <!-- Chord Progression Generator -->
+    <section id="chord-generator">
+        <h2>🎸 Generate a Chord Progression</h2>
+        <p>Pick a mood:</p>
+        <div class="mood-buttons">
+            <button onclick="generateChords('sad')">Sad 😢</button>
+            <button onclick="generateChords('angry')">Angry 😠</button>
+            <button onclick="generateChords('happy')">Happy 😊</button>
+            <button onclick="generateChords('loved')">Loved ❤️</button>
+            <button onclick="generateChords('frustrated')">Frustrated 😤</button>
+        </div>
+        <p id="chord-result"></p>
+    </section>
+    <footer>Lemme hear you sing, Call me baby <3</footer>
+
+    <script src="creative.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.miss-me-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Virtual Hug Section */
+.virtual-hug {
+    margin-bottom: 20px;
+}
+
+#hug-button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#hug-button:hover {
+    background-color: #004d40;
+}
+
+#hug-message {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #f06292;
+    font-weight: bold;
+}
+
+/* Memory Lane Dropdown */
+#toggle-memories {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5f6368;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#toggle-memories:hover {
+    background-color: #42464a;
+}
+
+.memory-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.memory-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.memory-item:hover {
+    background-color: #e0f7fa;
+    transform: scale(1.05);
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+/* Hide elements by default */
+.hidden {
+    display: none;
+}
+/* Header */
+.page-header {
+    text-align: center;
+    background-color: #00796b;
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Footer */
+.page-footer {
+    text-align: center;
+    background-color: #00796b;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+}

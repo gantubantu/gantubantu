@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f5f5dc; /* Beige */
+    color: #001f3f; /* Dark Blue */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Confetti */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: red;
+    opacity: 0.8;
+    animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+/* Fortune Cookie */
+.fortune-container {
+    margin-top: 30px;
+}
+
+.fortune-container h2 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.fortune-cookie {
+    position: relative;
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.cookie-left, .cookie-right {
+    width: 50px;
+    height: 80px;
+    background: #ffcc66;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s ease;
+}
+
+.cookie-left {
+    left: 0;
+    transform-origin: right center;
+}
+
+.cookie-right {
+    right: 0;
+    transform-origin: left center;
+}
+
+.fortune-cookie.opened .cookie-left {
+    transform: rotate(-30deg);
+}
+
+.fortune-cookie.opened .cookie-right {
+    transform: rotate(30deg);
+}
+
+#fortune-text {
+    position: absolute;
+    width: 100px;
+    top: 40px;
+    font-size: 14px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fortune-cookie.opened #fortune-text {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #001f3f;
+    font-weight: bold;
+}
+/* Anime Watch Link Section */
+.anime-link-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.anime-button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #ff6347; /* Tomato color for emphasis */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.anime-button:hover {
+    background-color: #e53d2e; /* Darker tomato shade */
+}

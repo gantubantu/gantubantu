@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light pastel blue */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* Breathing Section */
+.breathing-section {
+    background-color: #e6f7ff; /* Soft light blue */
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.breathing-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #a8d8f3; /* Soft blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#breathing-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #c2f0d1; /* Pastel green */
+    border-radius: 50%;
+}
+
+/* Breathing Animation Keyframes */
+@keyframes inhaleAnimation {
+    0% {
+        transform: scale(1); /* Start at normal size */
+    }
+    100% {
+        transform: scale(0.5); /* Contract during inhale */
+    }
+}
+
+@keyframes holdAnimation {
+    0% {
+        transform: scale(0.5); /* Stay contracted */
+    }
+    100% {
+        transform: scale(0.5); /* Hold at this size */
+    }
+}
+
+@keyframes exhaleAnimation {
+    0% {
+        transform: scale(0.5); /* Start contracted */
+    }
+    100% {
+        transform: scale(1.5); /* Expand during exhale */
+    }
+}
+
+#breathing-timer-container {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px auto;
+}
+
+#instruction-text {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    background-color: #80c7a0; /* Calming green */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #a8d8f3; /* Soft blue */
+}
+
+/* Message Section */
+.message-section {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.message-section a {
+    color: #4d9b7a; /* Dark green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.message-section a:hover {
+    text-decoration: underline;
+}
+
+/* Game Section */
+.game-section {
+    background-color: #e6f7ff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#bubble-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #a8d8f3;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+/* Static Bubble Styles */
+.bubble {
+    width: 50px;
+    height: 50px;
+    background-color: #80c7a0; /* Green bubbles */
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Final Message */
+.final-message p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #80c7a0;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .breathing-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    #breathing-circle {
+        width: 75px;
+        height: 75px;
+    }
+
+    #breathing-timer-container {
+        width: 75px;
+        height: 75px;
+    }
+
+    #instruction-text {
+        font-size: 18px;
+    }
+}

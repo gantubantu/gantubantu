@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a Breath</title>
+    <link rel="stylesheet" href="angry.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Breathing Section -->
+        <div class="breathing-section">
+            <h2>Deep Breathing Exercise</h2>
+            <p id="instruction-text">Inhale...</p>
+            
+            <div class="breathing-container">
+                <div id="breathing-circle"></div>
+            </div>
+            
+            <div id="breathing-timer-container">
+                <span id="breathing-timer">60</span>
+            </div>
+        </div>
+
+        <!-- Comforting Message -->
+        <div class="message-section">
+            <p>Hey love, whatever happened, I'm here for you. Take your time, breathe, and know you're not alone. ❤️</p>
+            <p>Need a laugh? <a href="https://www.youtube.com/@tanmaybhat" target="_blank">Tanmay Bhat!</a></p>
+        </div>
+
+        <!-- Game Section -->
+        <div class="game-section">
+            <h2>Pop the Bubbles!</h2>
+            <p>Release your stress by popping all the bubbles.</p>
+            
+            <div id="bubble-container">
+                <!-- Bubbles will be added dynamically -->
+            </div>
+
+            <p id="score">0/15 bubbles popped</p>
+            <p id="final-message" style="display: none;">Yayy! You popped them all! Muaahhh </p>
+            
+            <button id="restart-game">Restart Game</button>
+        </div>
+
+        <!-- Final Encouragement -->
+        <div class="final-message">
+            <p>Feeling better, baby? Call me ❤️</p>
+        </div>
+    </div>
+
+    <script src="angry.js"></script>
+</body>
+</html>

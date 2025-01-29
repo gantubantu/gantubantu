@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc; /* Beige background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Ensures the content is stacked vertically */
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space between content and footer */
+}
+
+h2 {
+    color: #002147; /* Navy blue */
+}
+
+p {
+    font-size: 1.1em; /* Slightly larger text for better readability */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #002147; /* Navy blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #001a33; /* Darker navy on hover */
+}
+
+.love-notes, .date-idea, .result {
+    margin-bottom: 30px;
+}
+
+hr {
+    border-top: 1px solid #002147; /* Stylish separator */
+}
+
+.result-box {
+    background-color: #f0f8ff;
+    border: 1px solid #b0c4de;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+/* Footer Style */
+footer {
+    background-color: #002147; /* Navy blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 1.2em;
+    border-top: 3px solid #001a33;
+}
+
+footer p {
+    margin: 0;
+}

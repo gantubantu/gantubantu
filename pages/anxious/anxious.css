@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+/* Quote Section */
+.quote-section {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#quote-text {
+    font-size: 24px;
+    font-style: italic;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #80c7a0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+/* Journal Section */
+.journal-section {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Garden Section */
+.garden-section {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#garden-status {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#garden-container {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+}
+
+#garden {
+    width: 150px;
+    height: 250px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#soil {
+    width: 100%;
+    height: 50px;
+    background-color: #8B4513;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+#plant {
+    width: 20px;
+    height: 0;
+    background-color: #228B22;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 2s ease-out;
+}
+
+.flower {
+    width: 60px;
+    height: 60px;
+    background-color: #FF6347; /* Flower Color */
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: flowerAnimation 2s ease-out forwards;
+}
+
+@keyframes flowerAnimation {
+    0% {
+        transform: translateX(-50%) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Final Message */
+.final-message p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #80c7a0;
+}
+
+/* Hanuman Chalisa Section */
+.hanuman-chalisa-section {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.hanuman-chalisa-section a {
+    font-size: 18px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.hanuman-chalisa-section a:hover {
+    text-decoration: underline;
+}

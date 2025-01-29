@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curious</title>
+    <link rel="stylesheet" href="curious.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Curious Baby? 🤓</h1>
+        <p>K garne? Herata!</p>
+
+        <div class="section">
+            <h2>🔍 Random Fun Fact</h2>
+            <p id="fact-text">Click the button to learn something interesting!</p>
+            <button onclick="generateFact()">Get a Fun Fact 🎲</button>
+        </div>
+
+        <div class="section">
+            <h2>💡 "Did You Know?" Trivia Quiz</h2>
+            <p id="quiz-question"></p>
+            <div id="quiz-options"></div>
+            <p id="quiz-feedback"></p>
+            <button onclick="loadQuiz()">Next Question 🔄</button>
+        </div>
+
+        <div class="section">
+            <h2>🧠 Personality Quiz</h2>
+            <p>Answer these simple questions and discover your personality type!</p>
+            <div id="quiz-container"></div>
+            <button onclick="calculatePersonality()">Get Result 🎭</button>
+            <p id="personality-result"></p>
+        </div>
+    </div>
+
+    <script src="curious.js"></script>
+</body>
+</html>

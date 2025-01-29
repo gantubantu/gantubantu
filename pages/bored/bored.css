@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #001f3f; /* Dark blue */
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #446fb1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: #ffffff; /* White container */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.games-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3; /* Darker blue */
+}
+
+/* Tic Tac Toe */
+#tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+}
+
+#tic-tac-toe-board button {
+    width: 100px;
+    height: 100px;
+}
+
+/* Reaction Test */
+#reaction-result {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c0c0c; 
+}
+
+/* Memory Game */
+#memory-game-title {
+    color: #35077e;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#memory-board {
+    display: grid;
+    grid-template-columns: repeat(6, 60px); /* 6x6 grid */
+    grid-template-rows: repeat(6, 60px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.memory-card {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    background-color: #007bff; /* Blue */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

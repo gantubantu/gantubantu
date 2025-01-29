@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Features</title>
+    <link rel="stylesheet" href="romantic.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Love Notes Section -->
+        <section class="love-notes">
+            <h2>Sweet Love Notes</h2>
+            <p id="loveNote">Click the button below to receive a heartfelt message!</p>
+            <button id="loveNoteBtn" aria-label="Show a love note">Reveal My Love Note</button>
+        </section>
+
+        <hr>
+
+        <!-- Virtual Date Idea Section (Trivia Game) -->
+        <section class="date-idea">
+            <h2>Choose Our Perfect Virtual Date Idea</h2>
+            <p id="question">Let's start with a few questions to find the perfect virtual date idea!</p>
+            <div class="date-options" id="optionsContainer">
+                <button class="dateBtn" onclick="answerTrivia('happy')">I feel happy!</button>
+                <button class="dateBtn" onclick="answerTrivia('relaxed')">I feel relaxed.</button>
+                <button class="dateBtn" onclick="answerTrivia('adventurous')">I feel adventurous!</button>
+            </div>
+            <p id="dateMessage">Select an option above to continue!</p>
+        </section>
+
+        <hr>
+
+        <!-- Result Section -->
+        <section class="result">
+            <h2>Your Virtual Date Idea:</h2>
+            <div id="resultBox" class="result-box">
+                <p id="dateIdea">Your virtual date idea will appear here after completing the quiz.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Date? Hehe! Call me <3</p>
+    </footer>
+
+    <script src="romantic.js"></script>
+</body>
+</html>
